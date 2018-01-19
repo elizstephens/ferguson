@@ -1,0 +1,335 @@
+body{
+  background-image: url("img/BackgroundPhoto.jpg");
+  background-repeat: no-repeat;
+  /*background-color:#CABAD2;*/
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+html{
+  font-size:100%;
+}
+
+
+.layer {
+  background-color: rgba(149,165,191,0.8);
+}
+
+#header{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:'Roboto', Helvetica, sans-serif;
+    color: #EEE5D5;
+    text-shadow: 2px 2px 2px #391E3B;
+    padding: 50px 0 50px 0;
+
+}
+
+#subtitle{
+/*background-color:#CABAD2;*/
+color: white;
+text-align:center;
+font-size: 1.0em;
+font-family:'Roboto', Helvetica, sans-serif;
+font-weight: bold;
+font-style: italic;
+text-shadow: 2px 2px 2px #391E3B;
+}
+
+#container{
+width:95%;
+margin:0 auto;
+}
+
+h2{
+  font-size: 1.5em;
+  font-family:'Roboto', Helvetica, sans-serif;
+  color: #EEE5D5;
+}
+h3{
+  font-size: 4em;
+  font-family:'Roboto', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #EEE5D5;
+  background-color: rgba(46,44,33,0.7);
+  text-shadow: 2px 2px 2px #391E3B;
+  padding: 8px 0 8px 8px;
+}
+
+h4{
+  font-size:2em;
+  font-family:'Roboto', Helvetica, sans-serif;
+  color: #231A28;
+  font-weight: bold;
+  padding: 0 25px 0 25px;
+}
+
+h6{
+  font-size:1.5em;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-style: italic;
+  color: white;
+  background-color: #231A28;
+  text-align: center;
+  padding: 25px 25px 25px 25px;
+  margin: 25px 15% 25px 15%;
+}
+
+h5{
+  font-size: 1em;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0 25px 0 25px;
+}
+
+p{
+  font-size: 1.5em;
+  font-family:'Raleway', Georgia, serif;
+  font-weight: medium;
+  color: #EEE5D5;
+  line-height: 1.3em;
+  padding:0 25px 0 25px;
+}
+
+nav {
+  padding-top: 25px;
+}
+
+nav ul{
+    list-style-type:none;
+    display:block;
+    padding: 0;
+    background-color:rgba(149,165,191,.7);
+    text-align:center;
+}
+
+nav li a{
+    display:block;
+    color:#EEE5D5;
+    background-color:rgba(46,44,33,0);
+    /*width:100%;*/
+    padding:8px;
+    margin: 0 auto;
+    text-decoration:none;
+    font-family:'Roboto', Helvetica, sans-serif;
+    font-weight:500;
+    text-align: center;
+}
+
+nav li a:hover{
+    background-color:#231A28;
+    color:#EEEEEE;
+    font-weight:bold;
+    margin: 0 auto;
+}
+
+.article{
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 100px;
+}
+
+.article img{
+  width:100%;
+}
+
+#gallery img{
+  width:100%;
+}
+
+#map img{
+  width:100%;
+}
+
+/*whoweare*/
+#authorbox {
+  text-align: center;
+  padding: 20px;
+}
+
+#authorbox img{
+  object-fit:cover;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+/*whoweare*/
+
+#sociopic{
+  text-align:center;
+}
+
+
+
+#racepic{
+  text-align:center;
+}
+
+#gofurther{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#gofurther img{
+  display:block;
+  width:70%;
+  padding-top:20px;
+}
+#gofurther a:link {
+    display:block;
+    color: #78088A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#gofurther a:visited{
+  color: #413C42;
+}
+
+#footer{
+  color:black;
+  font-family:'Raleway', Georgia, serif;
+  font-size:0.8rem;
+  font-style:italic;
+  border-top:1px solid black;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+
+.menu-trigger{
+  order: 1;
+  font-size: 2em;
+  color:white;
+
+}
+
+nav ul{
+  display:none;
+}
+
+
+@media screen and (min-width:600px) {
+  #header {
+    font-size: 2.0em;
+    padding-top: 100px;
+  }
+
+  #gofurther img{
+    display:block;
+    width:50%;
+    padding-top:20px;
+  }
+
+  #subtitle {
+    font-size:1.5em;
+  }
+
+  nav ul {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+  justify-content: space-around;
+  }
+  nav {
+    padding-top: 85px;
+  }
+  .menu-trigger{
+    display:none;
+  }
+
+  #container{
+  width:80%;
+  margin:0 auto;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  #whoweare{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #header {
+    font-size: 2.5em;
+  }
+  h3{
+    font-size: 2em;
+  }
+  h4{
+    font-size: 2em;
+  }
+  h4, h5, p{
+    padding: 0 15% 0 15%;
+   }
+
+  h6{
+    margin: 25px 10% 25px 10%;
+  }
+ }
+
+/*---grid stuff----*/
+  /*.article{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "i i i"
+        "q a a"
+        "i i i"
+        "b b b"
+        "i i i"
+        "c c c";
+  }
+
+  .article img{
+    grid-area:i;
+  }
+
+  #pullquote
+   {
+    grid-area:q;
+  }
+
+  #section1{
+    grid-area:a;
+  }
+  #section2{
+    grid-area:b;
+  }
+  #section3{
+    grid-area:c;
+  }
+  #section4{
+    grid-area:d;
+  }*/
+
+
+@media screen and (min-wdth:1000px) {
+  h4, h5, p{
+    padding: 0 20% 0 20%;
+   }
+ }
+
+
+
+/*lavender background for intro section/chapter body #CABAD2
+dark purple background for Who We Are section/chapter headers #231A28
+teal nav hover color #2AD1BB
+
+fonts: font-family:'Roboto', Helvetica, sans-serif;
+font-family:'Raleway', Georgia, serif;
+font-family: 'Ubuntu', Helvetica, sans-serif;*/
